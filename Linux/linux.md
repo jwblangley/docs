@@ -23,6 +23,13 @@ mount <parition_name> <mount_point>
 umount <mount_point>
 ```
 
+## RAMDISK
+```bash
+mount -t tmpfs -o rw,size=<size> <name> <mount_point>
+# ... When finished, don't forget to
+umount <local_mount_point>
+```
+
 ### To Automatically Mount on Boot
 Use `gnome-disks`
 1. Select partition -> Edit Mount Options
