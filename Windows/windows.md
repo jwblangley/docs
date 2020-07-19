@@ -31,6 +31,18 @@ Used for managing partitions, assigning volume letters, etc.
 * `clean`: removes all partitions (and data!)
 * `<assign|remove> letter=<letter>` (with volume selected)
 
+## Deleting a Stubborn File
+```cmd
+takeown /f <file>
+```
+
+## Get Windows Product Key
+For activation. Useful if computer becomes deactivated after upgrade as it finds the original key.
+```cmd
+wmic os get "serialnumber" # to get serial number if needed
+wmic path softwarelicensingservice get OA3xOriginalProductKey
+```
+
 ## Recovering a Computer that Fails to Boot
 ```cmd
 bootrec /fixmbr
@@ -72,3 +84,4 @@ bcdboot C:\Windows /l en-gb /s b: /f ALL
 ```
 
 Fingers crossed and reboot one last time :)
+
