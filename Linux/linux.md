@@ -15,6 +15,23 @@
     umount <local_mount_point>
     ```
 
+## Mounting Drives/Partitions
+* Use `gparted` or `gnome-disks` to find (with GUI) *partition name*. Or use `fdisk -l` to do this via command line (harder to understand). N.B: *devices* look like `/dev/sdx` and partitions look like `/dev/sdxY`. e.g. `/dev/sda` and `/dev/sda1` respectively.
+```bash
+mount <parition_name> <mount_point>
+# ... When finished, don't forget to
+umount <mount_point>
+```
+
+### To Automatically Mount on Boot
+Use `gnome-disks`
+1. Select partition -> Edit Mount Options
+2. Turn off "user session defaults"
+3. Select "Mount at system startup"
+4. Fill in other fields as desired (including mount point)
+5. reboot
+
+
 ## Terminal multiplexer
 Use [tmux](https://github.com/tmux/tmux/wiki) and [my tmux config](https://github.com/jwblangley/tmux-config)
 
@@ -23,7 +40,10 @@ Use [tmux](https://github.com/tmux/tmux/wiki) and [my tmux config](https://githu
 tmux new -d [-s <session_name>] <starting_command>
 ```
 
-## `ssh` as a VPN
+## `ssh`
+### Graphical applications over `ssh`
+* Pass the `-X` or `-Y` flag
+### `ssh` as a VPN
 `ssh` can actually be used to tunnel network traffic also!
 ```bash
 ssh -N -L <local_port>:<remote>:<remote_port> <user>@<remote>
