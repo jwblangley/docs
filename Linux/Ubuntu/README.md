@@ -79,6 +79,3 @@ This is particularly relevant for Java (especially when wanting to work with Ora
     Then type the chosen installation number
 
 N.B for java, it is best to do this process for `java` and `javac`
-
-
-
