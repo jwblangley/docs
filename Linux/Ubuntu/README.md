@@ -39,8 +39,17 @@ Can be launched with `software-properties-gtk` (e.g. with ssh -X or -Y)
 * [Manipulate `sources.list`](#managing-installed-programs) to remove any software that was disabled by the upgrade and **make a note of which**
 
 ---
+
 * `apt update` should now run without any errors or warnings
 * Reinstall those that were removed
+
+## To Automatically Mount Drives on Boot
+Use `gnome-disks`
+1. Select partition -> Edit Mount Options
+2. Turn off "user session defaults"
+3. Select "Mount at system startup"
+4. Fill in other fields as desired (including mount point)
+5. reboot
 
 ## To Turn On/Off Mounts From Appearing in the Dock
 ```bash

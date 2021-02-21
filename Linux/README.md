@@ -30,15 +30,6 @@ mount -t tmpfs -o rw,size=<size> <name> <mount_point>
 umount <local_mount_point>
 ```
 
-### To Automatically Mount on Boot
-Use `gnome-disks`
-1. Select partition -> Edit Mount Options
-2. Turn off "user session defaults"
-3. Select "Mount at system startup"
-4. Fill in other fields as desired (including mount point)
-5. reboot
-
-
 ## Terminal multiplexer
 Use [tmux](https://github.com/tmux/tmux/wiki) and [my tmux config](https://github.com/jwblangley/tmux-config)
 
