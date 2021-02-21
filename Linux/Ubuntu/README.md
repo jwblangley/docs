@@ -1,5 +1,12 @@
 # Ubuntu
 
+## Use of the (Desktop) Clipboard in the Command Line
+[`xclip`](https://github.com/astrand/xclip)
+* `-o`: paste to `stdout`
+* Use `-sel clip` option to use the main clipboard. Defaults to middle-mouse-click temporary clipboard otherwise.
+* Very useful when combined with pipes e.g. `echo test | xclip`
+* Also required to use clipboard in `micro`
+
 ## Prevent/Allow Ubuntu Sleeping
 e.g. For an Ubuntu Server
 ```bash
@@ -39,8 +46,17 @@ Can be launched with `software-properties-gtk` (e.g. with ssh -X or -Y)
 * [Manipulate `sources.list`](#managing-installed-programs) to remove any software that was disabled by the upgrade and **make a note of which**
 
 ---
+
 * `apt update` should now run without any errors or warnings
 * Reinstall those that were removed
+
+## To Automatically Mount Drives on Boot
+Use `gnome-disks`
+1. Select partition -> Edit Mount Options
+2. Turn off "user session defaults"
+3. Select "Mount at system startup"
+4. Fill in other fields as desired (including mount point)
+5. reboot
 
 ## To Turn On/Off Mounts From Appearing in the Dock
 ```bash

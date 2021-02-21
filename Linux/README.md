@@ -30,15 +30,6 @@ mount -t tmpfs -o rw,size=<size> <name> <mount_point>
 umount <local_mount_point>
 ```
 
-### To Automatically Mount on Boot
-Use `gnome-disks`
-1. Select partition -> Edit Mount Options
-2. Turn off "user session defaults"
-3. Select "Mount at system startup"
-4. Fill in other fields as desired (including mount point)
-5. reboot
-
-
 ## Terminal multiplexer
 Use [tmux](https://github.com/tmux/tmux/wiki) and [my tmux config](https://github.com/jwblangley/tmux-config)
 
@@ -65,10 +56,3 @@ Will set up a tunnel such that `example.com:443` (443 is `https`) can be accesse
 
 ## Command Line Task Manager
 [`htop`](https://github.com/hishamhm/htop)
-
-## Use of the (Desktop) Clipboard in the Command Line
-[`xclip`](https://github.com/astrand/xclip)
-* `-i`: copy from `stdin`
-* `-o`: paste to `stdout`
-* Very useful when combined with pipes
-* Also required to use clipboard in `micro`

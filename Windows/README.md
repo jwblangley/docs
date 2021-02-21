@@ -84,4 +84,3 @@ bcdboot C:\Windows /l en-gb /s b: /f ALL
 ```
 
 Fingers crossed and reboot one last time :)
-

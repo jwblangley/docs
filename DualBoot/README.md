@@ -1,11 +1,12 @@
 # Dual Boot
 
-## Custom Linux (Ubuntu) Install
-Usually best to install Windows first and let it install fresh over the whole disk.
+## Custom Linux (Ubuntu) Install - Method for Setting Up Dual Boot
+Usually best to install Windows first over the whole disk for a dual boot setup.
 
 1. Continue wizard until "Installation type"
 2. Select "Something else"
-3. Create the following partitions
+3. (For dual boot) Shrink Windows partition to make free space. Recovery partition can be left untouched.
+4. Create the following partitions
     1. Swap partition
         * Size: >= RAM (for hibernation)
         * Type: Primary (can be logical if "unstable" issue occurs)
@@ -22,7 +23,7 @@ Usually best to install Windows first and let it install fresh over the whole di
         * Type: Logical
         * Location: Beginning of space
         * Use as: ext4 fs
-        * Mount point: /
+        * Mount point: /home
 
 ## Windows Booting Without `GRUB` Boot Menu even appearing
 This can sometimes happen after a Windows update; the bootloader default has been set to Windows rather than `GRUB`.
