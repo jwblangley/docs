@@ -1,5 +1,12 @@
 # Ubuntu
 
+## Use of the (Desktop) Clipboard in the Command Line
+[`xclip`](https://github.com/astrand/xclip)
+* `-o`: paste to `stdout`
+* Use `-sel clip` option to use the main clipboard. Defaults to middle-mouse-click temporary clipboard otherwise.
+* Very useful when combined with pipes e.g. `echo test | xclip`
+* Also required to use clipboard in `micro`
+
 ## Prevent/Allow Ubuntu Sleeping
 e.g. For an Ubuntu Server
 ```bash
@@ -72,3 +79,6 @@ This is particularly relevant for Java (especially when wanting to work with Ora
     Then type the chosen installation number
 
 N.B for java, it is best to do this process for `java` and `javac`
+
+
+

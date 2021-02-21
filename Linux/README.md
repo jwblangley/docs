@@ -56,10 +56,3 @@ Will set up a tunnel such that `example.com:443` (443 is `https`) can be accesse
 
 ## Command Line Task Manager
 [`htop`](https://github.com/hishamhm/htop)
-
-## Use of the (Desktop) Clipboard in the Command Line
-[`xclip`](https://github.com/astrand/xclip)
-* `-i`: copy from `stdin`
-* `-o`: paste to `stdout`
-* Very useful when combined with pipes
-* Also required to use clipboard in `micro`
