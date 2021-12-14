@@ -41,6 +41,7 @@ tmux new -d [-s <session_name>] <starting_command>
 ## `ssh`
 ### Graphical applications over `ssh`
 * Pass the `-X` or `-Y` flag
+* Need `$DISPLAY` environment variable. If using `sudo`, use `sudo -E`.
 ### `ssh` as a VPN
 `ssh` can actually be used to tunnel network traffic also!
 ```bash
