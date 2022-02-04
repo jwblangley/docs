@@ -2,6 +2,8 @@
 
 ![Build and Deploy](https://github.com/jwblangley/docs/actions/workflows/publish.yml/badge.svg)
 
+https://jwblangley.github.io/docs/
+
 ---
 
 **Time-saving Answers to Infrequent, but Annoyingly Specific Tasks**
