@@ -1,0 +1,27 @@
+site_name: My Personal Docs
+site_url: https://jwblangley.github.io/docs
+theme:
+  name: material
+  favicon: img/favicon.ico
+  icon:
+    logo: fontawesome/solid/book
+  features:
+    - navigation: instant
+    - navigation.tabs
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: cyan
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: cyan
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+extra_css:
+  - stylesheets/extra.css
