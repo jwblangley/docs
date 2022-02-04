@@ -1,4 +1,4 @@
-# `xargs`
+# xargs
 
 `xargs` is a command line utility that allows the output of one command to be formatted correctly for another programs arguments.
 

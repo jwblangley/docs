@@ -1,4 +1,4 @@
-# `ssh` as a VPN
+# SSH as a VPN
 `ssh` can actually be used to tunnel network traffic also!
 ```bash
 ssh -N -L <local_port>:<remote>:<remote_port> <user>@<remote>

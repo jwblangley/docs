@@ -1,4 +1,5 @@
-# Managing installed programs
+# Managing Installed Programs
+
 1. Find manually installed programs to find those you no longer need
     ```bash
     sudo apt-mark showmanual
