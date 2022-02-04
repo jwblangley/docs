@@ -1,0 +1,19 @@
+name: Publish to github pages branch
+on: [push]
+# on:
+#   push:
+#     branches:
+#       - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install and build
+        run: |
+          pip3 install -r requirements.txt
+          mkdocs build
+
+      - name: Deploy
