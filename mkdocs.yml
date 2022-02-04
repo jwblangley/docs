@@ -5,6 +5,9 @@ theme:
   favicon: img/favicon.ico
   icon:
     logo: fontawesome/solid/book
+  features:
+    - navigation: instant
+    - navigation.tabs
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -20,3 +23,5 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+extra_css:
+  - stylesheets/extra.css
