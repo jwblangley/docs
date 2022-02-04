@@ -71,6 +71,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://jwblangley.github.io/docs/Unix/gpg/</loc>
+         <lastmod>2022-02-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://jwblangley.github.io/docs/Unix/patch/</loc>
          <lastmod>2022-02-04</lastmod>
          <changefreq>daily</changefreq>
