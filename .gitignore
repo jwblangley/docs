@@ -1,2 +1,5 @@
 # Virtual environments
 venv/
+
+# Build directory
+site/
