@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://jwblangley.github.io/docs/Windows/CommandLineAccess/">
+        <link rel="canonical" href="https://jwblangley.github.io/docs/Unix/grep/">
       
       <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9">
     
     
       
-        <title>Accessing the Command Line (Root Admin) - My Personal Docs</title>
+        <title>grep - My Personal Docs</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#accessing-the-command-line-root-admin" class="md-skip">
+        <a href="#grep" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Accessing the Command Line (Root Admin)
+              grep
             
           </span>
         </div>
@@ -225,13 +225,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Unix/MountingDrivesPartitions/" class="md-tabs__link">
+      <a href="../MountingDrivesPartitions/" class="md-tabs__link md-tabs__link--active">
         Unix
       </a>
     </li>
@@ -241,15 +243,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Windows/CommandLineAccess/" class="md-tabs__link">
         Windows
       </a>
     </li>
@@ -489,12 +489,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -517,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/MountingDrivesPartitions/" class="md-nav__link">
+      <a href="../MountingDrivesPartitions/" class="md-nav__link">
         Mounting Drives/Partitions
       </a>
     </li>
@@ -531,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/RAMDisk/" class="md-nav__link">
+      <a href="../RAMDisk/" class="md-nav__link">
         RAMDisk
       </a>
     </li>
@@ -545,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/RemoteFileAccess/" class="md-nav__link">
+      <a href="../RemoteFileAccess/" class="md-nav__link">
         Remote File Access
       </a>
     </li>
@@ -559,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/SSHDisplay/" class="md-nav__link">
+      <a href="../SSHDisplay/" class="md-nav__link">
         Graphical Applications Over SSH
       </a>
     </li>
@@ -573,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/SSHVPN/" class="md-nav__link">
+      <a href="../SSHVPN/" class="md-nav__link">
         SSH as a VPN
       </a>
     </li>
@@ -587,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/gpg/" class="md-nav__link">
+      <a href="../gpg/" class="md-nav__link">
         Encryption
       </a>
     </li>
@@ -599,11 +601,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Unix/grep/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          grep
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         grep
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regular-expressions" class="md-nav__link">
+    Regular expressions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matching-patterns-that-come-from-a-file" class="md-nav__link">
+    Matching patterns that come from a file
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -615,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/patch/" class="md-nav__link">
+      <a href="../patch/" class="md-nav__link">
         Patch
       </a>
     </li>
@@ -629,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/ssl/" class="md-nav__link">
+      <a href="../ssl/" class="md-nav__link">
         SSL Certificates
       </a>
     </li>
@@ -643,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/xargs/" class="md-nav__link">
+      <a href="../xargs/" class="md-nav__link">
         xargs
       </a>
     </li>
@@ -683,7 +733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/Ubuntu/AutomaticMountOnBoot/" class="md-nav__link">
+      <a href="../Ubuntu/AutomaticMountOnBoot/" class="md-nav__link">
         AutomaticMountOnBoot
       </a>
     </li>
@@ -697,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/Ubuntu/InstallingAppImages/" class="md-nav__link">
+      <a href="../Ubuntu/InstallingAppImages/" class="md-nav__link">
         Installing *.AppImage applications
       </a>
     </li>
@@ -711,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/Ubuntu/ManagingInstalls/" class="md-nav__link">
+      <a href="../Ubuntu/ManagingInstalls/" class="md-nav__link">
         Managing Installed Programs
       </a>
     </li>
@@ -725,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/Ubuntu/MountsInDock/" class="md-nav__link">
+      <a href="../Ubuntu/MountsInDock/" class="md-nav__link">
         To Turn On/Off Mounts from Appearing in the Dock
       </a>
     </li>
@@ -739,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/Ubuntu/PreventSleep/" class="md-nav__link">
+      <a href="../Ubuntu/PreventSleep/" class="md-nav__link">
         Prevent/Allow Ubuntu Sleeping
       </a>
     </li>
@@ -753,7 +803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/Ubuntu/ScreenRecording/" class="md-nav__link">
+      <a href="../Ubuntu/ScreenRecording/" class="md-nav__link">
         Screen Recording
       </a>
     </li>
@@ -767,7 +817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/Ubuntu/TerminalClipboard/" class="md-nav__link">
+      <a href="../Ubuntu/TerminalClipboard/" class="md-nav__link">
         Use of the (Desktop) Clipboard in the Command Line
       </a>
     </li>
@@ -781,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/Ubuntu/UpdatingUbuntu/" class="md-nav__link">
+      <a href="../Ubuntu/UpdatingUbuntu/" class="md-nav__link">
         Updating Ubuntu
       </a>
     </li>
@@ -795,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/Ubuntu/VersionManagement/" class="md-nav__link">
+      <a href="../Ubuntu/VersionManagement/" class="md-nav__link">
         Managing Versions of Programs on the Path
       </a>
     </li>
@@ -842,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Unix/tmux/StartInDetached/" class="md-nav__link">
+      <a href="../tmux/StartInDetached/" class="md-nav__link">
         Starting Services in Detached Sessions
       </a>
     </li>
@@ -869,14 +919,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
@@ -897,21 +945,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Windows/CommandLineAccess/" class="md-nav__link">
         Accessing the Command Line (Root Admin)
       </a>
-      
     </li>
   
 
@@ -923,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Diskpart/" class="md-nav__link">
+      <a href="../../Windows/Diskpart/" class="md-nav__link">
         Using diskpart
       </a>
     </li>
@@ -937,7 +975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnableDisableAdministrator/" class="md-nav__link">
+      <a href="../../Windows/EnableDisableAdministrator/" class="md-nav__link">
         Enable/Disable Administrator Account
       </a>
     </li>
@@ -951,7 +989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../FailToBoot/" class="md-nav__link">
+      <a href="../../Windows/FailToBoot/" class="md-nav__link">
         Recovering a Computer that Fails to Boot
       </a>
     </li>
@@ -965,7 +1003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../PasswordManagement/" class="md-nav__link">
+      <a href="../../Windows/PasswordManagement/" class="md-nav__link">
         Password Management
       </a>
     </li>
@@ -979,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ProductKey/" class="md-nav__link">
+      <a href="../../Windows/ProductKey/" class="md-nav__link">
         Get Windows Product Key
       </a>
     </li>
@@ -993,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../StubbornFiles/" class="md-nav__link">
+      <a href="../../Windows/StubbornFiles/" class="md-nav__link">
         Taking ownership of stubborn files
       </a>
     </li>
@@ -1027,6 +1065,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#regular-expressions" class="md-nav__link">
+    Regular expressions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matching-patterns-that-come-from-a-file" class="md-nav__link">
+    Matching patterns that come from a file
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1038,13 +1098,16 @@
               
                 
 
-<h1 id="accessing-the-command-line-root-admin">Accessing the Command Line (Root Admin)</h1>
-<ol>
-<li><code>shift</code> + restart or use a Windows boot USB</li>
-<li>Troubleshoot</li>
-<li>Advanced Options</li>
-<li>Command Prompt</li>
-</ol>
+<h1 id="grep">grep</h1>
+<p><code>grep</code> is a well-known, useful command line utility to filter stdin.
+Here are some lesser-known features.</p>
+<h2 id="regular-expressions">Regular expressions</h2>
+<p>Invoking <code>grep</code> with the <code>-E</code> flag allows you to use extended regular expressions.</p>
+<h2 id="matching-patterns-that-come-from-a-file">Matching patterns that come from a file</h2>
+<p>You might be in a use case where your patterns are defined in a file and you want to use this to grep your input.
+This template can be (modified and) used to achieve this.</p>
+<pre><code class="language-bash">grep $(sed &quot;s/^/-e /;s/$/ /&quot; patterns.txt | tr -d &quot;\n&quot;)
+</code></pre>
 
               
             </article>
@@ -1058,7 +1121,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../Unix/tmux/StartInDetached/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Starting Services in Detached Sessions" rel="prev">
+        <a href="../gpg/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Encryption" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1067,20 +1130,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Starting Services in Detached Sessions
+              Encryption
             </div>
           </div>
         </a>
       
       
         
-        <a href="../Diskpart/" class="md-footer__link md-footer__link--next" aria-label="Next: Using diskpart" rel="next">
+        <a href="../patch/" class="md-footer__link md-footer__link--next" aria-label="Next: Patch" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Using diskpart
+              Patch
             </div>
           </div>
           <div class="md-footer__button md-icon">
