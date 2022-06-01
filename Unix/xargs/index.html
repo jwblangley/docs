@@ -1053,9 +1053,12 @@
                 
 
 <h1 id="xargs">xargs</h1>
-<p><code>xargs</code> is a command line utility that allows the output of one command to be formatted correctly for another programs arguments.</p>
+<p><code>xargs</code> is a command line utility that formats stdin correctly for another program's arguments and invokes that program</p>
 <p>For example, by default the command <code>ls</code> outputs over a number of lines, but <code>ls | xargs</code> will push these onto one line (space-separated).
-This is very useful for substituting a command's results in another command. e.g. <code>rm $(ls | xargs)</code>. N.B: this is a contrived example where <code>rm -r *</code> would be easier.</p>
+This is very useful for substituting a command's results in another command. e.g. <code>ls | xargs rm</code>. N.B: this is a contrived example where <code>rm -r *</code> would be easier.</p>
+<p><code>xargs</code> is therefore very useful for scripting, but it also becomes essential if you would otherwise have a massive number of program arguments.
+For example if you were deleting thousands of files (by name (contrived example)) and were to put them all onto the command line with <code>$()</code>, some would be cut short since there is a maximum argument limit. <code>xargs</code> obeys this and will split the call into multiple calls if necessary to accommodate this.
+This can be manually achieved with the <code>-n &lt;n&gt;</code> argument which allows only <code>n</code> arguments per call. This also opens up much more scripting potential.</p>
 
               
             </article>
