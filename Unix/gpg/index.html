@@ -656,6 +656,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#asymmetric-encryption" class="md-nav__link">
+    Asymmetric Encryption
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1111,6 +1118,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#asymmetric-encryption" class="md-nav__link">
+    Asymmetric Encryption
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1143,6 +1157,46 @@
 <pre><code class="language-bash">gpg --cipher-algo &lt;ALGO&gt; &lt;file&gt;
 </code></pre>
 <p>No change is required to the decrypt command.</p>
+<h2 id="asymmetric-encryption">Asymmetric Encryption</h2>
+<p>You can see a list of keys with <code>gpg --list-keys</code>. <code>--list-secret-keys</code> and <code>--list-public-keys</code> are also available.</p>
+<ol>
+<li>
+<p>Generate a key pair</p>
+<p><code>bash
+gpg --gen-key</code></p>
+</li>
+<li>
+<p>Export your public key</p>
+<p><code>bash
+gpg --export --armor &lt;name&gt; &gt; &lt;name&gt;.pub</code></p>
+</li>
+<li>
+<p>(Optional) Make a backup of your private key. Only ever store this backup in offline media.
+    <code>bash
+    gpg --export-secret-keys --armor &lt;name&gt; &gt; &lt;name&gt;.priv</code></p>
+</li>
+<li>
+<p>Import the other's public key</p>
+<p><code>bash
+gpg --import key.pub</code></p>
+</li>
+<li>
+<p>(Optional) Trust the key</p>
+<p><code>bash
+gpg --edit-key &lt;name&gt;</code>
+Enter <code>trust</code> then the level you wish to trust it to</p>
+</li>
+<li>
+<p>Encrypt a file</p>
+<p><code>bash
+gpg --encrypt --recipient &lt;recipient&gt; &lt;file&gt;</code></p>
+</li>
+<li>
+<p>Decrypt a received file</p>
+<p><code>bash
+gpg --decrypt &lt;file&gt;.gpg --output &lt;file&gt;</code></p>
+</li>
+</ol>
 
               
             </article>
