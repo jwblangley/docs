@@ -41,6 +41,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://jwblangley.github.io/docs/Git/pre-commit/</loc>
+         <lastmod>2022-06-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://jwblangley.github.io/docs/Git/root/</loc>
          <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
