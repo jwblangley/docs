@@ -2,187 +2,192 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jwblangley.github.io/docs/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/DualBoot/UbuntuWindowsSetup/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/DualBoot/WindowsByPassingGrubMenu/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Git/alias/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Git/diff/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Git/dotfile/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Git/logdog/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Git/patch/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Git/pre-commit/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Git/root/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/MountingDrivesPartitions/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/RAMDisk/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/RemoteFileAccess/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/SSHDisplay/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/SSHVPN/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jwblangley.github.io/docs/Unix/compression/</loc>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/gpg/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/grep/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/patch/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/ssl/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/xargs/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/Ubuntu/AutomaticMountOnBoot/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/Ubuntu/InstallingAppImages/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/Ubuntu/ManagingInstalls/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/Ubuntu/MountsInDock/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/Ubuntu/PreventSleep/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/Ubuntu/ScreenRecording/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/Ubuntu/TerminalClipboard/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/Ubuntu/UpdatingUbuntu/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/Ubuntu/VersionManagement/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Unix/tmux/StartInDetached/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Windows/CommandLineAccess/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Windows/Diskpart/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Windows/EnableDisableAdministrator/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Windows/FailToBoot/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Windows/PasswordManagement/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Windows/ProductKey/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/Windows/StubbornFiles/</loc>
-         <lastmod>2022-06-01</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
