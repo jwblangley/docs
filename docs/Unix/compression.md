@@ -13,7 +13,7 @@ By default, `gzip` does not use all cores. This can be ammended by using the `pi
 `gzip` can only compress a single file. `tar` (or `zip` - difference being inter-file compression in `tar`) creates a single archive file from multiple.
 Combining `tar and gzip` is the standard way of making compressed archives.
 
-* `-c` : Creates archive
+* `-c` : Creates archive (recursive by default)
 * `-x` : Extracts the archive
 * `-f` : Creates archive with given filename (use `-` for stdout)
 * `-v` : Displays verbose information
