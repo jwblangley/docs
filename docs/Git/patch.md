@@ -8,9 +8,11 @@
     git add [<files>] -p
     ```
     
-    ```bash
-    git config [--global] alias.co "checkout"
-    ```
+new
+
+```bash
+git config [--global] alias.co "checkout"
+```
 
 ## Creating and Applying Patches
 
