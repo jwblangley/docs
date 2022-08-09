@@ -1129,35 +1129,33 @@
 <h1 id="patch">Patch</h1>
 <h2 id="interactive-patch-staging">Interactive Patch Staging</h2>
 <ul>
-<li>
-<p>If you have modified a file in multiple places but want to only commit some of your changes git add has a patch option that allows you to interactively choose which parts of the file to stage.</p>
-<p><code>bash
-git add [&lt;files&gt;] -p</code></p>
-</li>
+<li>If you have modified a file in multiple places but want to only commit some of your changes git add has a patch option that allows you to interactively choose which parts of the file to stage.</li>
 </ul>
-<p>new</p>
-<pre><code class="language-bash">git config [--global] alias.co &quot;checkout&quot;
+<pre><code class="language-bash">git add [&lt;files&gt;] -p
 </code></pre>
 <h2 id="creating-and-applying-patches">Creating and Applying Patches</h2>
 <ul>
 <li>Similar to unix's <a href="../../Unix/patch/">patch</a> git can be used to make patches</li>
-<li>The benefit when working in a git repository is that filenames/paths are registered in git history and do not need to be specified</li>
+<li>
+<p>The benefit when working in a git repository is that filenames/paths are registered in git history and do not need to be specified</p>
+</li>
 <li>
 <p>To create a diff</p>
-<p><code>bash
-  git diff [&lt;files&gt;] &gt; mypatch.patch</code></p>
-</li>
-<li>
-<p>To apply a diff</p>
-<p><code>bash
-  git apply mypatch.patch</code></p>
-</li>
-<li>
-<p>To revert a diff</p>
-<p><code>bash
-  git apply -R mypatch.patch</code></p>
 </li>
 </ul>
+<p>```bash
+git diff [<files>] &gt; mypatch.patch</p>
+<pre><code>
+* To apply a diff
+
+```bash
+git apply mypatch.patch
+</code></pre>
+<ul>
+<li>To revert a diff</li>
+</ul>
+<pre><code class="language-bash">git apply -R mypatch.patch
+</code></pre>
 
               
             </article>
