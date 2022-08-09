@@ -15,7 +15,7 @@ git add [<files>] -p
 
 * To create a diff
 
- ```bash
+```bash
 git diff [<files>] > mypatch.patch
 ```
 
