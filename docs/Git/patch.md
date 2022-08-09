@@ -4,8 +4,12 @@
 
 * If you have modified a file in multiple places but want to only commit some of your changes git add has a patch option that allows you to interactively choose which parts of the file to stage.
 
-    ``` bash
+    ```bash
     git add [<files>] -p
+    ```
+    
+    ```bash
+    git config [--global] alias.co "checkout"
     ```
 
 ## Creating and Applying Patches
@@ -14,18 +18,18 @@
   * The benefit when working in a git repository is that filenames/paths are registered in git history and do not need to be specified
   * To create a diff
   
-      ``` bash
+      ```bash
       git diff [<files>] > mypatch.patch
       ```
       
   * To apply a diff
   
-      ``` bash
+      ```bash
       git apply mypatch.patch
       ```
       
   * To revert a diff
     
-      ``` bash
+      ```bash
       git apply -R mypatch.patch
       ```
