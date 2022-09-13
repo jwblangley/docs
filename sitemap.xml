@@ -51,6 +51,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://jwblangley.github.io/docs/Git/rebase/</loc>
+         <lastmod>2022-09-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://jwblangley.github.io/docs/Git/root/</loc>
          <lastmod>2022-09-13</lastmod>
          <changefreq>daily</changefreq>

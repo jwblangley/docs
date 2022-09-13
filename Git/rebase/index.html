@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://jwblangley.github.io/docs/Windows/FailToBoot/">
+        <link rel="canonical" href="https://jwblangley.github.io/docs/Git/rebase/">
       
       <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9">
     
     
       
-        <title>Recovering a Computer that Fails to Boot - My Personal Docs</title>
+        <title>Rebase - My Personal Docs</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#recovering-a-computer-that-fails-to-boot" class="md-skip">
+        <a href="#rebase" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Recovering a Computer that Fails to Boot
+              Rebase
             
           </span>
         </div>
@@ -209,13 +209,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Git/alias/" class="md-tabs__link">
+      <a href="../alias/" class="md-tabs__link md-tabs__link--active">
         Git
       </a>
     </li>
@@ -241,15 +243,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../CommandLineAccess/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Windows/CommandLineAccess/" class="md-tabs__link">
         Windows
       </a>
     </li>
@@ -371,12 +371,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -399,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git/alias/" class="md-nav__link">
+      <a href="../alias/" class="md-nav__link">
         Git Alias
       </a>
     </li>
@@ -413,7 +415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git/checkout-deprecation/" class="md-nav__link">
+      <a href="../checkout-deprecation/" class="md-nav__link">
         The splitting/deprecation of git checkout
       </a>
     </li>
@@ -427,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git/diff/" class="md-nav__link">
+      <a href="../diff/" class="md-nav__link">
         Diff
       </a>
     </li>
@@ -441,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git/dotfile/" class="md-nav__link">
+      <a href="../dotfile/" class="md-nav__link">
         Git Dotfile
       </a>
     </li>
@@ -455,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git/logdog/" class="md-nav__link">
+      <a href="../logdog/" class="md-nav__link">
         Pretty Print Git History Graph
       </a>
     </li>
@@ -469,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git/patch/" class="md-nav__link">
+      <a href="../patch/" class="md-nav__link">
         Patch
       </a>
     </li>
@@ -483,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git/pre-commit/" class="md-nav__link">
+      <a href="../pre-commit/" class="md-nav__link">
         Pre-commit
       </a>
     </li>
@@ -495,11 +497,79 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Git/rebase/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Rebase
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Rebase
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#onto" class="md-nav__link">
+    Onto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive" class="md-nav__link">
+    Interactive
+  </a>
+  
+    <nav class="md-nav" aria-label="Interactive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixups" class="md-nav__link">
+    Fixups
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rerere" class="md-nav__link">
+    rerere
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -511,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Git/root/" class="md-nav__link">
+      <a href="../root/" class="md-nav__link">
         Report Root Directory of Current Git Repo
       </a>
     </li>
@@ -925,14 +995,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
@@ -955,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CommandLineAccess/" class="md-nav__link">
+      <a href="../../Windows/CommandLineAccess/" class="md-nav__link">
         Accessing the Command Line (Root Admin)
       </a>
     </li>
@@ -969,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Diskpart/" class="md-nav__link">
+      <a href="../../Windows/Diskpart/" class="md-nav__link">
         Using diskpart
       </a>
     </li>
@@ -983,7 +1051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../EnableDisableAdministrator/" class="md-nav__link">
+      <a href="../../Windows/EnableDisableAdministrator/" class="md-nav__link">
         Enable/Disable Administrator Account
       </a>
     </li>
@@ -995,21 +1063,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Windows/FailToBoot/" class="md-nav__link">
         Recovering a Computer that Fails to Boot
       </a>
-      
     </li>
   
 
@@ -1021,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../PasswordManagement/" class="md-nav__link">
+      <a href="../../Windows/PasswordManagement/" class="md-nav__link">
         Password Management
       </a>
     </li>
@@ -1035,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ProductKey/" class="md-nav__link">
+      <a href="../../Windows/ProductKey/" class="md-nav__link">
         Get Windows Product Key
       </a>
     </li>
@@ -1049,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../StubbornFiles/" class="md-nav__link">
+      <a href="../../Windows/StubbornFiles/" class="md-nav__link">
         Taking ownership of stubborn files
       </a>
     </li>
@@ -1083,6 +1141,48 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#onto" class="md-nav__link">
+    Onto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive" class="md-nav__link">
+    Interactive
+  </a>
+  
+    <nav class="md-nav" aria-label="Interactive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixups" class="md-nav__link">
+    Fixups
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rerere" class="md-nav__link">
+    rerere
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1094,36 +1194,35 @@
               
                 
 
-<h1 id="recovering-a-computer-that-fails-to-boot">Recovering a Computer that Fails to Boot</h1>
-<pre><code class="language-cmd">bootrec /fixmbr
-bootrec /fixboot
-bootrec /scanos
-bootrec /rebuildbcd
+<h1 id="rebase">Rebase</h1>
+<p>Rebasing is a method of overwriting history by moving commits fromone place to another.</p>
+<p>Typical usage may look like</p>
+<pre><code class="language-bash">git rebase main
 </code></pre>
-<p>Restart to check if fixed</p>
-<p>Still no fix?</p>
-<pre><code class="language-cmd">C:
-cd boot
-attrib bcd -s -h -r
-ren bcd bcd.old
-bootrec /rebuildbcd
+<p>which will move the commits from the current branch onto the main branch.</p>
+<h2 id="onto">Onto</h2>
+<p>A typical scenario is creating a branch from an existing non-default branch to continue working (whilst the base branch is in review).
+Once the base branch has been merged into the default branch, we want to move the new commits to a new branch off the default branch.
+This is achieved using the following.</p>
+<pre><code class="language-bash">git rebase --onto &lt;default_branch&gt; &lt;beginning_of_your_work_exclusive&gt; &lt;end_of_your_work_inclusive&gt;
 </code></pre>
-<p>This can be reverted with <code>bcdedit /import C:\boot\bcd.old</code></p>
-<p>Restart to check if fixed</p>
-<p>Still no fix?</p>
-<pre><code class="language-cmd">diskpart
-diskpart&gt; list disk
-diskpart&gt; select disk &lt;num&gt; # disk with os installed
-diskpart&gt; list volume
-diskpart&gt; select volume &lt;num&gt; # approx 260MB, FAT32 -&gt; looking for EFI partition
-diskpart&gt; assign letter=b
-
-cd /d b:\EFI\Microsoft\Boot\
-bootrec /fixboot
-ren BCD BCD.old
-bcdboot C:\Windows /l en-gb /s b: /f ALL
+<h2 id="interactive">Interactive</h2>
+<p>For anything more complicated, I recommend using </p>
+<pre><code class="language-bash">git rebase &lt;new_base&gt; -i
 </code></pre>
-<p>Fingers crossed and reboot one last time :)</p>
+<p>Which can allow you to squash commits etc.</p>
+<h3 id="fixups">Fixups</h3>
+<p>To fix a previous commit and automatically rebase, you can do the following:</p>
+<pre><code class="language-bash">git commit --fixup &lt;ref&gt;
+GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash &lt;ref&gt;~1
+</code></pre>
+<h2 id="rerere">rerere</h2>
+<p>To Reuse a previous Recorded conflict Resolution automatically, enable <code>git rerere</code>.</p>
+<pre><code class="language-bash">git config --global rerere.enabled true
+</code></pre>
+<p>If you do need to resolve a conflict differently, you can use the following after the fact.</p>
+<pre><code class="language-bash">git checkout --conflict=merge &lt;path&gt;
+</code></pre>
 
               
             </article>
@@ -1137,7 +1236,7 @@ bcdboot C:\Windows /l en-gb /s b: /f ALL
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../EnableDisableAdministrator/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Enable/Disable Administrator Account" rel="prev">
+        <a href="../pre-commit/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Pre-commit" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1146,20 +1245,20 @@ bcdboot C:\Windows /l en-gb /s b: /f ALL
               <span class="md-footer__direction">
                 Previous
               </span>
-              Enable/Disable Administrator Account
+              Pre-commit
             </div>
           </div>
         </a>
       
       
         
-        <a href="../PasswordManagement/" class="md-footer__link md-footer__link--next" aria-label="Next: Password Management" rel="next">
+        <a href="../root/" class="md-footer__link md-footer__link--next" aria-label="Next: Report Root Directory of Current Git Repo" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Password Management
+              Report Root Directory of Current Git Repo
             </div>
           </div>
           <div class="md-footer__button md-icon">
