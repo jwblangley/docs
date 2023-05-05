@@ -86,3 +86,20 @@
 * You can run commands on gdb startup by using a dotfile: `~/.gdbinit`
   
 * Compile with `-g 3` or later etc. to get better debug info (to stop "value optimised out" etc.)
+
+## Docker compatibility
+
+To be able to use `gdb` in a docker container, you need to run the container with additional arguments.
+
+```bash
+docker run --cap-add=SYS_PTRACE --security-opt seccomp=unconfined ...
+```
+
+If you are using docker-compose, this can be specified like so:
+
+```yaml
+security_opt:
+    - seccomp:unconfined
+cap_add:
+    - SYS_PTRACE
+```
