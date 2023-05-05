@@ -332,9 +332,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          GDB Debugging
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         GDB Debugging
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker-compatibility" class="md-nav__link">
+    Docker compatibility
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1122,6 +1153,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker-compatibility" class="md-nav__link">
+    Docker compatibility
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1275,6 +1321,16 @@
 <p>Compile with <code>-g 3</code> or later etc. to get better debug info (to stop "value optimised out" etc.)</p>
 </li>
 </ul>
+<h2 id="docker-compatibility">Docker compatibility</h2>
+<p>To be able to use <code>gdb</code> in a docker container, you need to run the container with additional arguments.</p>
+<pre><code class="language-bash">docker run --cap-add=SYS_PTRACE --security-opt seccomp=unconfined ...
+</code></pre>
+<p>If you are using docker-compose, this can be specified like so:</p>
+<pre><code class="language-yaml">security_opt:
+    - seccomp:unconfined
+cap_add:
+    - SYS_PTRACE
+</code></pre>
 
               
             </article>
