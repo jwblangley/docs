@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://jwblangley.github.io/docs/Unix/SSHDisplay/">
+        <link rel="canonical" href="https://jwblangley.github.io/docs/Unix/background-processes/">
       
       <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9">
     
     
       
-        <title>Graphical Applications Over SSH - My Personal Docs</title>
+        <title>Handling Background Processes - My Personal Docs</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#graphical-applications-over-ssh" class="md-skip">
+        <a href="#handling-background-processes" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Graphical Applications Over SSH
+              Handling Background Processes
             
           </span>
         </div>
@@ -642,21 +642,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../SSHDisplay/" class="md-nav__link">
         Graphical Applications Over SSH
       </a>
-      
     </li>
   
 
@@ -680,11 +670,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../background-processes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Handling Background Processes
       </a>
+      
     </li>
   
 
@@ -1191,11 +1191,21 @@
               
                 
 
-<h1 id="graphical-applications-over-ssh">Graphical Applications Over SSH</h1>
-<ul>
-<li>Pass the <code>-X</code> or <code>-Y</code> flag</li>
-<li>Need <code>$DISPLAY</code> environment variable. If using <code>sudo</code>, use <code>sudo -E</code>.</li>
-</ul>
+<h1 id="handling-background-processes">Handling Background Processes</h1>
+<p>See this code snippet on how to handle background processes within a script!</p>
+<pre><code class="language-bash">#!/usr/bin/env bash
+
+echo &quot;Starting a&quot;
+./a.sh | sed 's/^/A: /'&amp;
+
+echo &quot;Starting b&quot;
+./b.sh | sed 's/^/B: /'&amp;
+
+# Forward signals to child processes
+trap 'trap &quot;&quot; SIGTERM; kill 0; wait' SIGINT SIGTERM
+# Wait for child processes to finish
+wait
+</code></pre>
 
               
             </article>
@@ -1209,7 +1219,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../RemoteFileAccess/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Remote File Access" rel="prev">
+        <a href="../SSHVPN/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SSH as a VPN" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1218,20 +1228,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Remote File Access
+              SSH as a VPN
             </div>
           </div>
         </a>
       
       
         
-        <a href="../SSHVPN/" class="md-footer__link md-footer__link--next" aria-label="Next: SSH as a VPN" rel="next">
+        <a href="../compression/" class="md-footer__link md-footer__link--next" aria-label="Next: Compression" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              SSH as a VPN
+              Compression
             </div>
           </div>
           <div class="md-footer__button md-icon">
