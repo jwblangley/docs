@@ -1260,10 +1260,16 @@
 <ul>
 <li>Use <code>gparted</code> or <code>gnome-disks</code> to find (with GUI) <em>partition name</em>. Or use <code>fdisk -l</code> to do this via command line (harder to understand). N.B: <em>devices</em> look like <code>/dev/sdx</code> and partitions look like <code>/dev/sdxY</code>. e.g. <code>/dev/sda</code> and <code>/dev/sda1</code> respectively.</li>
 </ul>
-<pre><code class="language-bash">mount &lt;parition_name&gt; &lt;mount_point&gt;
-# ... When finished, don't forget to
-umount &lt;mount_point&gt;
-</code></pre>
+<p><code>bash
+  mount &lt;parition_name&gt; &lt;mount_point&gt;
+  # ... When finished, don't forget to
+  umount &lt;mount_point&gt;</code></p>
+<ul>
+<li>To mount part of a hard drive into the local directory (e.g. so that docker can use it without symlinks), add the following to <code>/etc/fstab</code></li>
+</ul>
+<p><code># Bind /hdd/server to /home/server/hdd
+  /hdd/server /home/server/hdd none defaults,bind 0 0</code></p>
+<p>Similar to this is what is happening automatically when using <a href="../ubuntu/automatic-mount-on-boot/"><code>gnome-disks</code></a></p>
 
               
             </article>
