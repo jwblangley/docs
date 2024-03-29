@@ -1261,7 +1261,7 @@
 <li>Use <code>gparted</code> or <code>gnome-disks</code> to find (with GUI) <em>partition name</em>. Or use <code>fdisk -l</code> to do this via command line (harder to understand). N.B: <em>devices</em> look like <code>/dev/sdx</code> and partitions look like <code>/dev/sdxY</code>. e.g. <code>/dev/sda</code> and <code>/dev/sda1</code> respectively.</li>
 </ul>
 <p><code>bash
-  mount &lt;parition_name&gt; &lt;mount_point&gt;
+  mount &lt;parition_name&gt; &lt;mount_point&gt; -o uid=$UID -o gid=$GID
   # ... When finished, don't forget to
   umount &lt;mount_point&gt;</code></p>
 <ul>
