@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://jwblangley.github.io/docs/unix/ssl/">
+        <link rel="canonical" href="https://jwblangley.github.io/docs/unix/parallel/">
       
       <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.9">
     
     
       
-        <title>SSL Certificates - My Personal Docs</title>
+        <title>GNU Parallel - My Personal Docs</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ssl-certificates" class="md-skip">
+        <a href="#gnu-parallel" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SSL Certificates
+              GNU Parallel
             
           </span>
         </div>
@@ -735,11 +735,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../parallel/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         GNU Parallel
       </a>
+      
     </li>
   
 
@@ -819,21 +829,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ssl/" class="md-nav__link">
         SSL Certificates
       </a>
-      
     </li>
   
 
@@ -1270,14 +1270,12 @@
               
                 
 
-<h1 id="ssl-certificates">SSL Certificates</h1>
-<p>To generate an SSL certificate and private key pair, use the following command:</p>
-<pre><code class="language-bash">openssl req -x509 -newkey rsa:4096 -keyout privatekey.key -out public-certificate.crt -sha256 -days 365
+<h1 id="gnu-parallel">GNU Parallel</h1>
+<p>To execute arbitrary commands in parallel (multi-process), making use of additional CPU cores, across input data, <a href="https://www.gnu.org/software/parallel/">GNU <code>parallel</code></a> can be used.</p>
+<p>A basic example is as follows:</p>
+<pre><code class="language-bash">find . -name '*.html' | parallel gzip --best
 </code></pre>
-<ul>
-<li>Add the <code>-nodes</code> flag to disable DES passphrase encryption</li>
-<li><code>-days</code> specifies the time until expiry</li>
-</ul>
+<p>and more examples can be found <a href="https://www.gnu.org/software/parallel/parallel_examples.html">here</a>.</p>
 
               
             </article>
@@ -1291,7 +1289,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../ssh-vpn/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SSH as a VPN" rel="prev">
+        <a href="../networking/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Networking" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1300,20 +1298,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              SSH as a VPN
+              Networking
             </div>
           </div>
         </a>
       
       
         
-        <a href="../xargs/" class="md-footer__link md-footer__link--next" aria-label="Next: xargs" rel="next">
+        <a href="../patch/" class="md-footer__link md-footer__link--next" aria-label="Next: Patch" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              xargs
+              Patch
             </div>
           </div>
           <div class="md-footer__button md-icon">
