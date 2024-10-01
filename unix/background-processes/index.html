@@ -648,9 +648,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Handling Background Processes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Handling Background Processes
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    Quick Reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-scripts" class="md-nav__link">
+    In scripts
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1273,6 +1311,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    Quick Reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-scripts" class="md-nav__link">
+    In scripts
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1285,6 +1345,20 @@
                 
 
 <h1 id="handling-background-processes">Handling Background Processes</h1>
+<h2 id="quick-reference">Quick Reference</h2>
+<ul>
+<li><code>Ctrl + Z</code>: suspend job in background</li>
+<li><code>jobs</code>: list jobs</li>
+<li><code>bg</code>: resume a job in the background</li>
+<li><code>fg</code>: bring a job to the foreground</li>
+<li><code>wait</code>: wait for background jobs to finish</li>
+<li><code>foo &amp;</code>: only runs <code>foo</code> in the background; stdin and stdout are still connected</li>
+<li><code>foo &gt;/dev/null 2&gt;&amp;1 &amp;</code>: runs foo in the background and pipe all output to <code>/dev/null</code>. Some shells allow this syntax: <code>foo &amp;&gt;/dev/null &amp;</code>. stdin is still connected</li>
+<li><code>nohup foo</code>: Pipes stdout and stderr to <code>nohup.out</code>. stdin reads will result in errors or EOF. A foreground <code>nohup</code>'d job makes no real sense, so normally use <code>nohup foo &amp;</code></li>
+<li><code>disown</code>: remove ownership of a job from the current shell. This means the current shell can be closed without killing the job. <code>nohup</code> does not do this by itself, so using <code>disown</code> after <code>nohup</code> is a good idea</li>
+<li><code>stty tostop</code> or <code>stty -tostop</code>: Send (or do not send) <code>SIGTTOU</code> for background jobs if they try to write output. This causes background jobs to stop (or not) if they attempt terminal output.</li>
+</ul>
+<h2 id="in-scripts">In scripts</h2>
 <p>See this code snippet on how to handle background processes within a script!</p>
 <pre><code class="language-bash">#!/usr/bin/env bash
 
@@ -1299,6 +1373,8 @@ trap 'trap &quot;&quot; SIGTERM; kill 0; wait' SIGINT SIGTERM
 # Wait for child processes to finish
 wait
 </code></pre>
+<p>The <code>trap</code> command allows you to catch signals and execute code when they occur.
+In this case we remove the trap and execute a <code>kill</code> and <code>wait</code> on any SIGINT or SIGTERM.</p>
 
               
             </article>
