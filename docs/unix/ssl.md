@@ -5,4 +5,5 @@ openssl req -x509 -newkey rsa:4096 -keyout privatekey.key -out public-certificat
 ```
 
 * Add the `-nodes` flag to disable DES passphrase encryption
+* Add the `-addext "subjectAltName = DNS:foobar.com,IP:111.222.111.222"` to specify a subjectAltName
 * `-days` specifies the time until expiry
