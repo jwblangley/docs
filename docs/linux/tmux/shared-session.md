@@ -9,6 +9,6 @@
 
 ## Sharing
 
-* To share a session, simply allow other users (via unix user groups) access to the socket
+* To share a session, simply allow other users (via linux user groups) access to the socket
 * In version (`tmux -V`) 3.3 and later an additional step is required.
     * Use `tmux server-access -a <user>` to add a user (specificying `-r` or `-w` for read or write access)

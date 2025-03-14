@@ -10,7 +10,7 @@ git add [<files>] -p
 
 ## Creating and Applying Patches
 
-* Similar to unix's [patch](../Unix/patch.md) git can be used to make patches
+* Similar to [patch](../linux/patch.md) git can be used to make patches
 * The benefit when working in a git repository is that filenames/paths are registered in git history and do not need to be specified
 
 * To create a diff
@@ -20,7 +20,7 @@ git diff [<files>] > mypatch.patch
 ```
 
 * To apply a diff
-  
+
 ```bash
 git apply mypatch.patch
 ```
