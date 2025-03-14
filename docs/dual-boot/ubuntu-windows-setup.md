@@ -1,4 +1,10 @@
 # Custom Linux (Ubuntu) Install - Method for Setting Up Dual Boot
+
+Before proceeding make note of the disk partitioning scheme on the boot drive (MBR or GPT).
+This, in turn will denote the boot mechanism (BIOS/Legacy or EFI).
+When creating the boot media AND when actually booting to that USB device, ensure that the correct boot mechanism (BIOS/Legacy or EFI) is being used.
+If a warning comes up on the last stage of the install, you probably have not matched the boot mechanism with the existing boot mechanism and will get a failed install.
+
 Usually best to install Windows first over the whole disk for a dual boot setup.
 
 1. Continue wizard until "Installation type"
