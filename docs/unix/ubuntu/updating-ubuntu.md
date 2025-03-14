@@ -1,6 +1,13 @@
 # Updating Ubuntu
 
+## Do a fresh install!
+
+If your ~/home is on a separate partition, that does not need to be reformated and can be kept!
+
+Although why not take the opportunity to start fresh!
+
 ## GUI (recommended)
+
 Sotware Updater
 
 ## Terminal
