@@ -1,8 +1,9 @@
 # Custom Linux (Ubuntu) Install - Method for Setting Up Dual Boot
 
-Before proceeding make note of the disk partitioning scheme on the boot drive (MBR or GPT).
-This, in turn will denote the boot mechanism (BIOS/Legacy or EFI).
-When creating the boot media AND when actually booting to that USB device, ensure that the correct boot mechanism (BIOS/Legacy or EFI) is being used.
+Before proceeding make note of the disk partitioning scheme on the boot drive (MBR or GPT) and the boot mechanism (BIOS/Legacy or EFI).
+On linux, you can check for the presence of `/sys/firmware.efi`; on windows, this can be found with `msinfo32`.
+When creating the boot media, most support both EFI and BIOS/Legacy if the boot media is installed with either MBR or GPT.
+However, when actually booting to that USB device, ensure that the correct boot mechanism (BIOS/Legacy or EFI) is being used.
 If a warning comes up on the last stage of the install, you probably have not matched the boot mechanism with the existing boot mechanism and will get a failed install.
 
 Usually best to install Windows first over the whole disk for a dual boot setup.
