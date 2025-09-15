@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://jwblangley.github.io/docs/">
+        <link rel="canonical" href="https://jwblangley.github.io/docs/linux/recover-bad-kernel/">
       
       
+        <link rel="prev" href="../ram-disk/">
       
-        <link rel="next" href="dual-boot/ubuntu-windows-setup/">
+      
+        <link rel="next" href="../remote-file-access/">
       
       
-      <link rel="icon" href="img/favicon.ico">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
-        <title>My Personal Docs</title>
+        <title>Recovering from a bad kernel installation - My Personal Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.e53b48f4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#home" class="md-skip">
+        <a href="#recovering-from-a-bad-kernel-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="My Personal Docs" class="md-header__button md-logo" aria-label="My Personal Docs" data-md-component="logo">
+    <a href="../.." title="My Personal Docs" class="md-header__button md-logo" aria-label="My Personal Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M384 512H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h304c26.5 0 48 21.5 48 48v288c0 20.9-13.4 38.7-32 45.3V448c17.7 0 32 14.3 32 32s-14.3 32-32 32zM96 384c-17.7 0-32 14.3-32 32s14.3 32 32 32h256v-64zm32-232c0 13.3 10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24H152c-13.3 0-24 10.7-24 24m24 72c-13.3 0-24 10.7-24 24s10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Recovering from a bad kernel installation
             
           </span>
         </div>
@@ -205,11 +207,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -230,7 +230,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="dual-boot/ubuntu-windows-setup/" class="md-tabs__link">
+        <a href="../../dual-boot/ubuntu-windows-setup/" class="md-tabs__link">
           
   
   
@@ -250,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="git/alias/" class="md-tabs__link">
+        <a href="../../git/alias/" class="md-tabs__link">
           
   
   
@@ -266,11 +266,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="linux/automatic-mount-on-boot/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../automatic-mount-on-boot/" class="md-tabs__link">
           
   
   
@@ -290,7 +292,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="programming/gdb/" class="md-tabs__link">
+        <a href="../../programming/gdb/" class="md-tabs__link">
           
   
   
@@ -310,7 +312,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="windows/command-line-access/" class="md-tabs__link">
+        <a href="../../windows/command-line-access/" class="md-tabs__link">
           
   
   
@@ -344,7 +346,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="My Personal Docs" class="md-nav__button md-logo" aria-label="My Personal Docs" data-md-component="logo">
+    <a href="../.." title="My Personal Docs" class="md-nav__button md-logo" aria-label="My Personal Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M384 512H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h304c26.5 0 48 21.5 48 48v288c0 20.9-13.4 38.7-32 45.3V448c17.7 0 32 14.3 32 32s-14.3 32-32 32zM96 384c-17.7 0-32 14.3-32 32s14.3 32 32 32h256v-64zm32-232c0 13.3 10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24H152c-13.3 0-24 10.7-24 24m24 72c-13.3 0-24 10.7-24 24s10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>
@@ -359,19 +361,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -382,7 +375,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -435,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dual-boot/ubuntu-windows-setup/" class="md-nav__link">
+      <a href="../../dual-boot/ubuntu-windows-setup/" class="md-nav__link">
         
   
   
@@ -458,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dual-boot/windows-without-grub-menu/" class="md-nav__link">
+      <a href="../../dual-boot/windows-without-grub-menu/" class="md-nav__link">
         
   
   
@@ -529,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="git/alias/" class="md-nav__link">
+      <a href="../../git/alias/" class="md-nav__link">
         
   
   
@@ -552,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="git/checkout-deprecation/" class="md-nav__link">
+      <a href="../../git/checkout-deprecation/" class="md-nav__link">
         
   
   
@@ -575,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="git/diff/" class="md-nav__link">
+      <a href="../../git/diff/" class="md-nav__link">
         
   
   
@@ -598,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="git/dotfile/" class="md-nav__link">
+      <a href="../../git/dotfile/" class="md-nav__link">
         
   
   
@@ -621,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="git/logdog/" class="md-nav__link">
+      <a href="../../git/logdog/" class="md-nav__link">
         
   
   
@@ -644,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="git/patch/" class="md-nav__link">
+      <a href="../../git/patch/" class="md-nav__link">
         
   
   
@@ -667,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="git/pre-commit/" class="md-nav__link">
+      <a href="../../git/pre-commit/" class="md-nav__link">
         
   
   
@@ -690,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="git/rebase/" class="md-nav__link">
+      <a href="../../git/rebase/" class="md-nav__link">
         
   
   
@@ -713,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="git/root/" class="md-nav__link">
+      <a href="../../git/root/" class="md-nav__link">
         
   
   
@@ -736,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="git/submodules/" class="md-nav__link">
+      <a href="../../git/submodules/" class="md-nav__link">
         
   
   
@@ -763,24 +755,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -793,7 +790,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Linux
@@ -807,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/automatic-mount-on-boot/" class="md-nav__link">
+      <a href="../automatic-mount-on-boot/" class="md-nav__link">
         
   
   
@@ -830,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/background-processes/" class="md-nav__link">
+      <a href="../background-processes/" class="md-nav__link">
         
   
   
@@ -853,7 +850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/compression/" class="md-nav__link">
+      <a href="../compression/" class="md-nav__link">
         
   
   
@@ -876,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/ffmpeg/" class="md-nav__link">
+      <a href="../ffmpeg/" class="md-nav__link">
         
   
   
@@ -899,7 +896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/gpg/" class="md-nav__link">
+      <a href="../gpg/" class="md-nav__link">
         
   
   
@@ -922,7 +919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/grep/" class="md-nav__link">
+      <a href="../grep/" class="md-nav__link">
         
   
   
@@ -945,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/installing-app-images/" class="md-nav__link">
+      <a href="../installing-app-images/" class="md-nav__link">
         
   
   
@@ -968,7 +965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/managing-installs/" class="md-nav__link">
+      <a href="../managing-installs/" class="md-nav__link">
         
   
   
@@ -991,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/mounting-drive-partitions/" class="md-nav__link">
+      <a href="../mounting-drive-partitions/" class="md-nav__link">
         
   
   
@@ -1014,7 +1011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/mounts-in-dock/" class="md-nav__link">
+      <a href="../mounts-in-dock/" class="md-nav__link">
         
   
   
@@ -1037,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/named-pipes/" class="md-nav__link">
+      <a href="../named-pipes/" class="md-nav__link">
         
   
   
@@ -1060,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/networking/" class="md-nav__link">
+      <a href="../networking/" class="md-nav__link">
         
   
   
@@ -1083,7 +1080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/parallel/" class="md-nav__link">
+      <a href="../parallel/" class="md-nav__link">
         
   
   
@@ -1106,7 +1103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/patch/" class="md-nav__link">
+      <a href="../patch/" class="md-nav__link">
         
   
   
@@ -1129,7 +1126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/prevent-sleep/" class="md-nav__link">
+      <a href="../prevent-sleep/" class="md-nav__link">
         
   
   
@@ -1152,7 +1149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/ram-disk/" class="md-nav__link">
+      <a href="../ram-disk/" class="md-nav__link">
         
   
   
@@ -1172,10 +1169,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="linux/recover-bad-kernel/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Recovering from a bad kernel installation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1186,6 +1205,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#useful-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful commands
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1198,7 +1246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/remote-file-access/" class="md-nav__link">
+      <a href="../remote-file-access/" class="md-nav__link">
         
   
   
@@ -1221,7 +1269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/screen-recording/" class="md-nav__link">
+      <a href="../screen-recording/" class="md-nav__link">
         
   
   
@@ -1244,7 +1292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/ssh-display/" class="md-nav__link">
+      <a href="../ssh-display/" class="md-nav__link">
         
   
   
@@ -1267,7 +1315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/ssh-vpn/" class="md-nav__link">
+      <a href="../ssh-vpn/" class="md-nav__link">
         
   
   
@@ -1290,7 +1338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/ssl/" class="md-nav__link">
+      <a href="../ssl/" class="md-nav__link">
         
   
   
@@ -1313,7 +1361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/sudo/" class="md-nav__link">
+      <a href="../sudo/" class="md-nav__link">
         
   
   
@@ -1336,7 +1384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/terminal-clipboard/" class="md-nav__link">
+      <a href="../terminal-clipboard/" class="md-nav__link">
         
   
   
@@ -1359,7 +1407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/updating-ubuntu/" class="md-nav__link">
+      <a href="../updating-ubuntu/" class="md-nav__link">
         
   
   
@@ -1382,7 +1430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/version-management/" class="md-nav__link">
+      <a href="../version-management/" class="md-nav__link">
         
   
   
@@ -1405,7 +1453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/xargs/" class="md-nav__link">
+      <a href="../xargs/" class="md-nav__link">
         
   
   
@@ -1428,7 +1476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/zsh-ordering/" class="md-nav__link">
+      <a href="../zsh-ordering/" class="md-nav__link">
         
   
   
@@ -1492,7 +1540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/tmux/shared-session/" class="md-nav__link">
+      <a href="../tmux/shared-session/" class="md-nav__link">
         
   
   
@@ -1515,7 +1563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="linux/tmux/start-in-detached/" class="md-nav__link">
+      <a href="../tmux/start-in-detached/" class="md-nav__link">
         
   
   
@@ -1594,7 +1642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="programming/gdb/" class="md-nav__link">
+      <a href="../../programming/gdb/" class="md-nav__link">
         
   
   
@@ -1665,7 +1713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="windows/command-line-access/" class="md-nav__link">
+      <a href="../../windows/command-line-access/" class="md-nav__link">
         
   
   
@@ -1688,7 +1736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="windows/diskpart/" class="md-nav__link">
+      <a href="../../windows/diskpart/" class="md-nav__link">
         
   
   
@@ -1711,7 +1759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="windows/enable-disable-administrator/" class="md-nav__link">
+      <a href="../../windows/enable-disable-administrator/" class="md-nav__link">
         
   
   
@@ -1734,7 +1782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="windows/fail-to-boot/" class="md-nav__link">
+      <a href="../../windows/fail-to-boot/" class="md-nav__link">
         
   
   
@@ -1757,7 +1805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="windows/mouse-scroll-direction/" class="md-nav__link">
+      <a href="../../windows/mouse-scroll-direction/" class="md-nav__link">
         
   
   
@@ -1780,7 +1828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="windows/password-management/" class="md-nav__link">
+      <a href="../../windows/password-management/" class="md-nav__link">
         
   
   
@@ -1803,7 +1851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="windows/product-key/" class="md-nav__link">
+      <a href="../../windows/product-key/" class="md-nav__link">
         
   
   
@@ -1826,7 +1874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="windows/stubborn-files/" class="md-nav__link">
+      <a href="../../windows/stubborn-files/" class="md-nav__link">
         
   
   
@@ -1869,6 +1917,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#useful-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful commands
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1883,10 +1948,23 @@
 
 
 
-<h1 id="home">Home</h1>
-<p><strong>Welcome to my documentation!</strong></p>
-<p>This is a place where I collate time-saving answers to those infrequent, yet annoying, tasks.</p>
-<p>Check out the sections with the tabs above! Once you have a tab, use the navigation menu to browse different topics!</p>
+<h1 id="recovering-from-a-bad-kernel-installation">Recovering from a bad kernel installation</h1>
+<p>Every now and then you may come across a bad kernel installation.
+The symptoms for this are usually hardware issues: graphics, keyboard/mouse/touchpad and network and the most common.</p>
+<p>To fix this, use GRUB to see "Additional options" and select a version with a previous kernel.</p>
+<p>This should launch with everything working.</p>
+<p>The most likely fix here is to <code>apt update</code> and <code>apt upgrade</code> as the bug will probably be fixed.
+In rare cases where this is not the case,
+uninstalling the old linux kernel will prevent needing to use additional options every time,
+but this will only last until you next have an update
+(which hopefully fixes it anyway!).</p>
+<h2 id="useful-commands">Useful commands</h2>
+<p>To check current linux kernel version</p>
+<pre><code class="language-bash">uname -r
+</code></pre>
+<p>To see installed kernels</p>
+<pre><code class="language-bash">dpkg --list | grep linux-image
+</code></pre>
 
 
 
@@ -1935,10 +2013,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [{"navigation": "instant"}, "navigation.tabs"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": [{"navigation": "instant"}, "navigation.tabs"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
