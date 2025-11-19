@@ -2,210 +2,214 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jwblangley.github.io/docs/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/dual-boot/ubuntu-windows-setup/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/dual-boot/windows-without-grub-menu/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/git/alias/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/git/checkout-deprecation/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/git/diff/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/git/dotfile/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/git/logdog/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/git/patch/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/git/pre-commit/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/git/rebase/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/git/root/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/git/submodules/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/automatic-mount-on-boot/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/background-processes/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/compression/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/ffmpeg/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/gpg/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/grep/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/installing-app-images/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/managing-installs/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/mounting-drive-partitions/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/mounts-in-dock/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/named-pipes/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/networking/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/parallel/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/patch/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/prevent-sleep/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/ram-disk/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/recover-bad-kernel/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/remote-file-access/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/screen-recording/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/ssh-display/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/ssh-vpn/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/ssl/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/sudo/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/terminal-clipboard/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/updating-ubuntu/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/version-management/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/xargs/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/zsh-ordering/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
+    </url>
+    <url>
+         <loc>https://jwblangley.github.io/docs/linux/tmux/parallelism/</loc>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/tmux/shared-session/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/linux/tmux/start-in-detached/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/programming/gdb/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/windows/command-line-access/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/windows/diskpart/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/windows/enable-disable-administrator/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/windows/fail-to-boot/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/windows/mouse-scroll-direction/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/windows/password-management/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/windows/product-key/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
     <url>
          <loc>https://jwblangley.github.io/docs/windows/stubborn-files/</loc>
-         <lastmod>2025-09-15</lastmod>
+         <lastmod>2025-11-19</lastmod>
     </url>
 </urlset>

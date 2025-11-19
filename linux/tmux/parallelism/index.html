@@ -8,31 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://jwblangley.github.io/docs/linux/compression/">
+        <link rel="canonical" href="https://jwblangley.github.io/docs/linux/tmux/parallelism/">
       
       
-        <link rel="prev" href="../background-processes/">
+        <link rel="prev" href="../../zsh-ordering/">
       
       
-        <link rel="next" href="../ffmpeg/">
+        <link rel="next" href="../shared-session/">
       
       
         
       
       
-      <link rel="icon" href="../../img/favicon.ico">
+      <link rel="icon" href="../../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Compression - My Personal Docs</title>
+        <title>Tmux Parallelism - My Personal Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#compression" class="md-skip">
+        <a href="#tmux-parallelism" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="My Personal Docs" class="md-header__button md-logo" aria-label="My Personal Docs" data-md-component="logo">
+    <a href="../../.." title="My Personal Docs" class="md-header__button md-logo" aria-label="My Personal Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M384 512H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h304c26.5 0 48 21.5 48 48v288c0 20.9-13.4 38.7-32 45.3V448c17.7 0 32 14.3 32 32s-14.3 32-32 32zM96 384c-17.7 0-32 14.3-32 32s14.3 32 32 32h256v-64zm32-232c0 13.3 10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24H152c-13.3 0-24 10.7-24 24m24 72c-13.3 0-24 10.7-24 24s10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Compression
+              Tmux Parallelism
             
           </span>
         </div>
@@ -211,7 +211,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -232,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../dual-boot/ubuntu-windows-setup/" class="md-tabs__link">
+        <a href="../../../dual-boot/ubuntu-windows-setup/" class="md-tabs__link">
           
   
   
@@ -252,7 +252,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../git/alias/" class="md-tabs__link">
+        <a href="../../../git/alias/" class="md-tabs__link">
           
   
   
@@ -274,7 +274,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../automatic-mount-on-boot/" class="md-tabs__link">
+        <a href="../../automatic-mount-on-boot/" class="md-tabs__link">
           
   
   
@@ -294,7 +294,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../programming/gdb/" class="md-tabs__link">
+        <a href="../../../programming/gdb/" class="md-tabs__link">
           
   
   
@@ -314,7 +314,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../windows/command-line-access/" class="md-tabs__link">
+        <a href="../../../windows/command-line-access/" class="md-tabs__link">
           
   
   
@@ -348,7 +348,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="My Personal Docs" class="md-nav__button md-logo" aria-label="My Personal Docs" data-md-component="logo">
+    <a href="../../.." title="My Personal Docs" class="md-nav__button md-logo" aria-label="My Personal Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M384 512H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h304c26.5 0 48 21.5 48 48v288c0 20.9-13.4 38.7-32 45.3V448c17.7 0 32 14.3 32 32s-14.3 32-32 32zM96 384c-17.7 0-32 14.3-32 32s14.3 32 32 32h256v-64zm32-232c0 13.3 10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24H152c-13.3 0-24 10.7-24 24m24 72c-13.3 0-24 10.7-24 24s10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>
@@ -366,7 +366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -443,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dual-boot/ubuntu-windows-setup/" class="md-nav__link">
+      <a href="../../../dual-boot/ubuntu-windows-setup/" class="md-nav__link">
         
   
   
@@ -471,7 +471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dual-boot/windows-without-grub-menu/" class="md-nav__link">
+      <a href="../../../dual-boot/windows-without-grub-menu/" class="md-nav__link">
         
   
   
@@ -556,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/alias/" class="md-nav__link">
+      <a href="../../../git/alias/" class="md-nav__link">
         
   
   
@@ -584,7 +584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/checkout-deprecation/" class="md-nav__link">
+      <a href="../../../git/checkout-deprecation/" class="md-nav__link">
         
   
   
@@ -612,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/diff/" class="md-nav__link">
+      <a href="../../../git/diff/" class="md-nav__link">
         
   
   
@@ -640,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/dotfile/" class="md-nav__link">
+      <a href="../../../git/dotfile/" class="md-nav__link">
         
   
   
@@ -668,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/logdog/" class="md-nav__link">
+      <a href="../../../git/logdog/" class="md-nav__link">
         
   
   
@@ -696,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/patch/" class="md-nav__link">
+      <a href="../../../git/patch/" class="md-nav__link">
         
   
   
@@ -724,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/pre-commit/" class="md-nav__link">
+      <a href="../../../git/pre-commit/" class="md-nav__link">
         
   
   
@@ -752,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/rebase/" class="md-nav__link">
+      <a href="../../../git/rebase/" class="md-nav__link">
         
   
   
@@ -780,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/root/" class="md-nav__link">
+      <a href="../../../git/root/" class="md-nav__link">
         
   
   
@@ -808,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/submodules/" class="md-nav__link">
+      <a href="../../../git/submodules/" class="md-nav__link">
         
   
   
@@ -898,7 +898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../automatic-mount-on-boot/" class="md-nav__link">
+      <a href="../../automatic-mount-on-boot/" class="md-nav__link">
         
   
   
@@ -926,7 +926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../background-processes/" class="md-nav__link">
+      <a href="../../background-processes/" class="md-nav__link">
         
   
   
@@ -951,37 +951,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Compression
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../compression/" class="md-nav__link">
         
   
   
@@ -997,115 +970,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#gzip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gzip
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pigz" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        pigz
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tar" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        tar
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="tar">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-a-compressed-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create a compressed archive
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decompress-an-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Decompress an archive
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-compressed-archive-using-all-cpu-cores-and-the-best-compression-level" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create a compressed archive using all CPU cores and the best compression level
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1118,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ffmpeg/" class="md-nav__link">
+      <a href="../../ffmpeg/" class="md-nav__link">
         
   
   
@@ -1146,7 +1010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gpg/" class="md-nav__link">
+      <a href="../../gpg/" class="md-nav__link">
         
   
   
@@ -1174,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../grep/" class="md-nav__link">
+      <a href="../../grep/" class="md-nav__link">
         
   
   
@@ -1202,7 +1066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installing-app-images/" class="md-nav__link">
+      <a href="../../installing-app-images/" class="md-nav__link">
         
   
   
@@ -1230,7 +1094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../managing-installs/" class="md-nav__link">
+      <a href="../../managing-installs/" class="md-nav__link">
         
   
   
@@ -1258,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mounting-drive-partitions/" class="md-nav__link">
+      <a href="../../mounting-drive-partitions/" class="md-nav__link">
         
   
   
@@ -1286,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mounts-in-dock/" class="md-nav__link">
+      <a href="../../mounts-in-dock/" class="md-nav__link">
         
   
   
@@ -1314,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../named-pipes/" class="md-nav__link">
+      <a href="../../named-pipes/" class="md-nav__link">
         
   
   
@@ -1342,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../networking/" class="md-nav__link">
+      <a href="../../networking/" class="md-nav__link">
         
   
   
@@ -1370,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../parallel/" class="md-nav__link">
+      <a href="../../parallel/" class="md-nav__link">
         
   
   
@@ -1398,7 +1262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../patch/" class="md-nav__link">
+      <a href="../../patch/" class="md-nav__link">
         
   
   
@@ -1426,7 +1290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prevent-sleep/" class="md-nav__link">
+      <a href="../../prevent-sleep/" class="md-nav__link">
         
   
   
@@ -1454,7 +1318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ram-disk/" class="md-nav__link">
+      <a href="../../ram-disk/" class="md-nav__link">
         
   
   
@@ -1482,7 +1346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../recover-bad-kernel/" class="md-nav__link">
+      <a href="../../recover-bad-kernel/" class="md-nav__link">
         
   
   
@@ -1510,7 +1374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../remote-file-access/" class="md-nav__link">
+      <a href="../../remote-file-access/" class="md-nav__link">
         
   
   
@@ -1538,7 +1402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../screen-recording/" class="md-nav__link">
+      <a href="../../screen-recording/" class="md-nav__link">
         
   
   
@@ -1566,7 +1430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ssh-display/" class="md-nav__link">
+      <a href="../../ssh-display/" class="md-nav__link">
         
   
   
@@ -1594,7 +1458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ssh-vpn/" class="md-nav__link">
+      <a href="../../ssh-vpn/" class="md-nav__link">
         
   
   
@@ -1622,7 +1486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ssl/" class="md-nav__link">
+      <a href="../../ssl/" class="md-nav__link">
         
   
   
@@ -1650,7 +1514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sudo/" class="md-nav__link">
+      <a href="../../sudo/" class="md-nav__link">
         
   
   
@@ -1678,7 +1542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terminal-clipboard/" class="md-nav__link">
+      <a href="../../terminal-clipboard/" class="md-nav__link">
         
   
   
@@ -1706,7 +1570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../updating-ubuntu/" class="md-nav__link">
+      <a href="../../updating-ubuntu/" class="md-nav__link">
         
   
   
@@ -1734,7 +1598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../version-management/" class="md-nav__link">
+      <a href="../../version-management/" class="md-nav__link">
         
   
   
@@ -1762,7 +1626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../xargs/" class="md-nav__link">
+      <a href="../../xargs/" class="md-nav__link">
         
   
   
@@ -1790,7 +1654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zsh-ordering/" class="md-nav__link">
+      <a href="../../zsh-ordering/" class="md-nav__link">
         
   
   
@@ -1815,6 +1679,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1825,11 +1691,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_29" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_29" checked>
         
           
           <label class="md-nav__link" for="__nav_4_29" id="__nav_4_29_label" tabindex="0">
@@ -1850,7 +1716,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_29_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_29_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_29">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1865,10 +1731,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../tmux/parallelism/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1884,6 +1759,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1896,7 +1772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tmux/shared-session/" class="md-nav__link">
+      <a href="../shared-session/" class="md-nav__link">
         
   
   
@@ -1924,7 +1800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tmux/start-in-detached/" class="md-nav__link">
+      <a href="../start-in-detached/" class="md-nav__link">
         
   
   
@@ -2017,7 +1893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/gdb/" class="md-nav__link">
+      <a href="../../../programming/gdb/" class="md-nav__link">
         
   
   
@@ -2102,7 +1978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/command-line-access/" class="md-nav__link">
+      <a href="../../../windows/command-line-access/" class="md-nav__link">
         
   
   
@@ -2130,7 +2006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/diskpart/" class="md-nav__link">
+      <a href="../../../windows/diskpart/" class="md-nav__link">
         
   
   
@@ -2158,7 +2034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/enable-disable-administrator/" class="md-nav__link">
+      <a href="../../../windows/enable-disable-administrator/" class="md-nav__link">
         
   
   
@@ -2186,7 +2062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/fail-to-boot/" class="md-nav__link">
+      <a href="../../../windows/fail-to-boot/" class="md-nav__link">
         
   
   
@@ -2214,7 +2090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/mouse-scroll-direction/" class="md-nav__link">
+      <a href="../../../windows/mouse-scroll-direction/" class="md-nav__link">
         
   
   
@@ -2242,7 +2118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/password-management/" class="md-nav__link">
+      <a href="../../../windows/password-management/" class="md-nav__link">
         
   
   
@@ -2270,7 +2146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/product-key/" class="md-nav__link">
+      <a href="../../../windows/product-key/" class="md-nav__link">
         
   
   
@@ -2298,7 +2174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/stubborn-files/" class="md-nav__link">
+      <a href="../../../windows/stubborn-files/" class="md-nav__link">
         
   
   
@@ -2346,103 +2222,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#gzip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        gzip
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pigz" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        pigz
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tar" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        tar
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="tar">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-a-compressed-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create a compressed archive
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decompress-an-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Decompress an archive
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-compressed-archive-using-all-cpu-cores-and-the-best-compression-level" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create a compressed archive using all CPU cores and the best compression level
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2458,31 +2237,14 @@
 
 
 
-<h1 id="compression">Compression</h1>
-<h2 id="gzip"><code>gzip</code></h2>
-<p>The <code>gzip</code> command can be used to compress single files. Add the <code>-#</code> replacing <code>#</code> with a number 1-9, for setting the compression level.</p>
-<h2 id="pigz"><code>pigz</code></h2>
-<p>By default, <code>gzip</code> does not use all cores. This can be ammended by using the <code>pigz</code> command instead. <code>pigz</code> is fully compatible with <code>gzip</code></p>
-<h2 id="tar"><code>tar</code></h2>
-<p><code>gzip</code> can only compress a single file. <code>tar</code> (or <code>zip</code> - difference being inter-file compression in <code>tar</code>) creates a single archive file from multiple.
-Combining <code>tar and gzip</code> is the standard way of making compressed archives.</p>
-<ul>
-<li><code>-c</code> : Creates archive (recursive by default)</li>
-<li><code>-x</code> : Extracts the archive</li>
-<li><code>-f</code> : Creates archive with given filename (use <code>-</code> for stdout)</li>
-<li><code>-v</code> : Displays verbose information</li>
-<li><code>-z</code> : Compresses the tar file using gzip</li>
-</ul>
-<h3 id="examples">Examples</h3>
-<h4 id="create-a-compressed-archive">Create a compressed archive</h4>
-<pre><code class="language-bash">tar cfzv archive.tar file1 file2 file3
-</code></pre>
-<h4 id="decompress-an-archive">Decompress an archive</h4>
-<pre><code class="language-bash">tar xfv archive.tar
-</code></pre>
-<h4 id="create-a-compressed-archive-using-all-cpu-cores-and-the-best-compression-level">Create a compressed archive using all CPU cores and the best compression level</h4>
-<pre><code class="language-bash">tar cf - paths-to-archive | pigz -9 &gt; archive.tar.gz
-</code></pre>
+<h1 id="tmux-parallelism">Tmux Parallelism</h1>
+<p>After splitting panes within tmux, a useful trick is to use <code>setw synchronize-panes</code> to be able to type in multiple panes at once.
+If you are doing this to parallise work, you are likely wanting to partition work to be done.
+To do this, within those panes, you can access a pane index using <code>${TMUX_PANE:1}</code>.
+This index can be used as a partitioning key to parallelise work.</p>
+<p>Note that this is an environment variable so will not persist over <code>ssh</code>.
+I find the best way to do this is to tabulate the work using <code>paste</code> with machine names and the work to be done.
+The machines can be <code>ssh</code>'d to and then look up their work with <code>grep</code> and <code>awk</code>.</p>
 
 
 
@@ -2532,10 +2294,10 @@ Combining <code>tar and gzip</code> is the standard way of making compressed arc
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [{"navigation": "instant"}, "navigation.tabs"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [{"navigation": "instant"}, "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>
