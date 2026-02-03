@@ -1,16 +1,23 @@
 # Compression
 
+## zstd
+
+While `gzip` is good, `zstd` is becoming the de facto standard for modern systems.
+It is significantly faster and produces as good or better (not guaranteed) compression ratios.
+
 ## `gzip`
 
 The `gzip` command can be used to compress single files. Add the `-#` replacing `#` with a number 1-9, for setting the compression level.
+`gzip` is natively single-threaded, but a multi-threaded implementation called `pigz` exists.
 
-## `pigz`
+## `xz`
 
-By default, `gzip` does not use all cores. This can be ammended by using the `pigz` command instead. `pigz` is fully compatible with `gzip`
+For the absolute best compression ratio, consider `xz`.
+The tradeoff is that the compression and decompression time are very high.
 
 ## `tar`
 
-`gzip` can only compress a single file. `tar` (or `zip` - difference being inter-file compression in `tar`) creates a single archive file from multiple.
+Compression algorithms only compress a single file at a time. `tar` creates a single archive file from multiple.
 Combining `tar and gzip` is the standard way of making compressed archives.
 
 * `-c` : Creates archive (recursive by default)
@@ -19,22 +26,7 @@ Combining `tar and gzip` is the standard way of making compressed archives.
 * `-v` : Displays verbose information
 * `-z` : Compresses the tar file using gzip
 
-### Examples
+## Parallelism
 
-#### Create a compressed archive
-
-```bash
-tar cfzv archive.tar file1 file2 file3
-```
-
-#### Decompress an archive
-
-```bash
-tar xfv archive.tar
-```
-
-#### Create a compressed archive using all CPU cores and the best compression level
-
-```bash
-tar cf - paths-to-archive | pigz -9 > archive.tar.gz
-```
+When compressing multiple files, prefer _external parallelism_.
+As an example, compress multiple files in parallel using a single thread each over one file at a time using all threads.
