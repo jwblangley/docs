@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1014,6 +1014,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#zstd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        zstd
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gzip" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1025,10 +1036,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pigz" class="md-nav__link">
+  <a href="#xz" class="md-nav__link">
     <span class="md-ellipsis">
       
-        pigz
+        xz
       
     </span>
   </a>
@@ -1044,61 +1055,16 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="tar">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parallelism" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Examples
+        Parallelism
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-a-compressed-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create a compressed archive
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decompress-an-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Decompress an archive
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-compressed-archive-using-all-cpu-cores-and-the-best-compression-level" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create a compressed archive using all CPU cores and the best compression level
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2353,6 +2319,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#zstd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        zstd
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gzip" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2364,10 +2341,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pigz" class="md-nav__link">
+  <a href="#xz" class="md-nav__link">
     <span class="md-ellipsis">
       
-        pigz
+        xz
       
     </span>
   </a>
@@ -2383,61 +2360,16 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="tar">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parallelism" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Examples
+        Parallelism
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#create-a-compressed-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create a compressed archive
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decompress-an-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Decompress an archive
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-compressed-archive-using-all-cpu-cores-and-the-best-compression-level" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create a compressed archive using all CPU cores and the best compression level
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2459,12 +2391,17 @@
 
 
 <h1 id="compression">Compression</h1>
+<h2 id="zstd">zstd</h2>
+<p>While <code>gzip</code> is good, <code>zstd</code> is becoming the de facto standard for modern systems.
+It is significantly faster and produces as good or better (not guaranteed) compression ratios.</p>
 <h2 id="gzip"><code>gzip</code></h2>
-<p>The <code>gzip</code> command can be used to compress single files. Add the <code>-#</code> replacing <code>#</code> with a number 1-9, for setting the compression level.</p>
-<h2 id="pigz"><code>pigz</code></h2>
-<p>By default, <code>gzip</code> does not use all cores. This can be ammended by using the <code>pigz</code> command instead. <code>pigz</code> is fully compatible with <code>gzip</code></p>
+<p>The <code>gzip</code> command can be used to compress single files. Add the <code>-#</code> replacing <code>#</code> with a number 1-9, for setting the compression level.
+<code>gzip</code> is natively single-threaded, but a multi-threaded implementation called <code>pigz</code> exists.</p>
+<h2 id="xz"><code>xz</code></h2>
+<p>For the absolute best compression ratio, consider <code>xz</code>.
+The tradeoff is that the compression and decompression time are very high.</p>
 <h2 id="tar"><code>tar</code></h2>
-<p><code>gzip</code> can only compress a single file. <code>tar</code> (or <code>zip</code> - difference being inter-file compression in <code>tar</code>) creates a single archive file from multiple.
+<p>Compression algorithms only compress a single file at a time. <code>tar</code> creates a single archive file from multiple.
 Combining <code>tar and gzip</code> is the standard way of making compressed archives.</p>
 <ul>
 <li><code>-c</code> : Creates archive (recursive by default)</li>
@@ -2473,16 +2410,9 @@ Combining <code>tar and gzip</code> is the standard way of making compressed arc
 <li><code>-v</code> : Displays verbose information</li>
 <li><code>-z</code> : Compresses the tar file using gzip</li>
 </ul>
-<h3 id="examples">Examples</h3>
-<h4 id="create-a-compressed-archive">Create a compressed archive</h4>
-<pre><code class="language-bash">tar cfzv archive.tar file1 file2 file3
-</code></pre>
-<h4 id="decompress-an-archive">Decompress an archive</h4>
-<pre><code class="language-bash">tar xfv archive.tar
-</code></pre>
-<h4 id="create-a-compressed-archive-using-all-cpu-cores-and-the-best-compression-level">Create a compressed archive using all CPU cores and the best compression level</h4>
-<pre><code class="language-bash">tar cf - paths-to-archive | pigz -9 &gt; archive.tar.gz
-</code></pre>
+<h2 id="parallelism">Parallelism</h2>
+<p>When compressing multiple files, prefer <em>external parallelism</em>.
+As an example, compress multiple files in parallel using a single thread each over one file at a time using all threads.</p>
 
 
 
@@ -2532,10 +2462,10 @@ Combining <code>tar and gzip</code> is the standard way of making compressed arc
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [{"navigation": "instant"}, "navigation.tabs"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [{"navigation": "instant"}, "navigation.tabs"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
